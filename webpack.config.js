@@ -24,7 +24,7 @@ module.exports = env => {
 		entry: './src/index.js',
 		output: {
 			path: path.join(__dirname, '/public'),
-			filename: 'js/ph.bundle.js',
+			filename: 'js/bundle.js',
 			publicPath: '/'
 		},
 		module: {
@@ -100,7 +100,7 @@ module.exports = env => {
 				template: './src/index.html'
 			}),
 			new MiniCssExtractPlugin({
-				filename: 'css/ph.style.css'
+				filename: 'css/style.css'
 			})
 		]
 	}
